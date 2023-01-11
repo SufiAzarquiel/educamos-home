@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+
+.row {
+    display:flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+img[src="img/LogoEducamos.jpg"] {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+}
+
+.py-10 {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+ .px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+
+.boton-azul {
+    border: solid 3px #3f5cd2;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#bnt-azl-blanco {
+    background-color: none;
+    color: #3f5cd2;
+}
+
+#bnt-azl-blanco:hover {
+    background-color: #3f5cd2;
+    color: white;
+}
+
+#bnt-azl-azul {
+    background-color: #3f5cd2;
+    color: white;
+}
+
+#bnt-azl-azul:hover {
+    background-color: #213481;
+    border-color: #213481;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.mx-15percent {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.font-weight-650 {
+    font-weight: 650;
+}
+
+.mx-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slide-container {
+    position: relative;
+}
+/* Hide the images by default */
+.slide {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer; /* cambiamos flecha por manita */
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
